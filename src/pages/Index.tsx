@@ -80,12 +80,12 @@ const Index = () => {
 
   const handleOrder = (platform: string, donut?: any) => {
     const message = donut 
-      ? `Halo! Saya ingin memesan ${donut.name} seharga ${donut.price}`
+      ? `Halo! Saya ingin memesan ${donut.name}\nseharga ${donut.price}`
       : "Halo! Saya ingin melihat menu donat yang tersedia";
 
     switch (platform) {
       case 'whatsapp':
-        window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+        window.open(`https://wa.me/6283831139680?text=${encodeURIComponent(message)}`, '_blank');
         break;
       case 'gofood':
         window.open('https://gofood.co.id/jakarta/restaurant/donut-heaven', '_blank');
